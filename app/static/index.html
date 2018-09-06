@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>API docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        h1 {
+            text-decoration: underline;
+        }
+        a {
+            color: #00183f;
+        }
+        hr {
+            border: none;
+            height: 5px;
+            background-color: #4295f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>API Documentation</h1>
+    <hr>
+    <h2>List of APIs: </h2>
+    <div id="lists">
+        <ul>
+            <li><a href="/api/rap">/api/rap</a></li>
+            <li><a href="/api/joindate">/api/joindate</a></li>
+            <li><a href="/api/latestitems">/api/latestitems</a></li>
+            <li><a href="/api/usernames">/api/usernames</a></li>
+        </ul>
+    </div>
+    <hr>
+    <h3>How to use them: </h3>
+    <p>
+        The vast majority of API's will require either a userId, or a username parameter. </br>
+        You can use either one (userId is faster), but only one should be used at a time.
+    </p>
+    <p>
+        The API's will always be returned in JSON - an error will be indicated </br>
+        by a status code of 500, and an "error" parameter (along with the error message and type) </br>
+        will be returned.
+    </p>
+    <hr>
+</body>
+</html>

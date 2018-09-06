@@ -1,0 +1,19 @@
+{
+  "name": "rservice",
+  "version": "1.0.0",
+  "description": "A JSON API for roblox.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/CyberOni/rservice.git"
+  },
+  "author": "Jake",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://gitlab.com/CyberOni/rservice/issues"
+  },
+  "homepage": "https://gitlab.com/CyberOni/rservice#README"
+}
