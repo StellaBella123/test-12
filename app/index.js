@@ -11,8 +11,6 @@ const RAPChecker = require('./lib/rapchecker')
 const getLatestItems = require('./lib/getlatestitems')
 
 // App modules
-app.use('/', express.static(__dirname + '/public'))
-app.use('/api', express.static(__dirname + '/static'))
 app.use(apicache.middleware('1 minutes'))
 
 const validateQuery = (req, res, next) => {
@@ -24,10 +22,6 @@ const validateQuery = (req, res, next) => {
         next()
     }
 }
-
-app.get('/', (req, res) => {
-    res.redirect('/api')
-})
 
 app.get('/api/rap', validateQuery, async (req, res, next) => {
     try {
